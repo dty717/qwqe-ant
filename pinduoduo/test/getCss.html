@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="utf-8">
+	<title>Drag and Drop File Uploading</title>
+	<style>
+		#drop_zone {
+		  border: 5px solid blue;
+		  width:  200px;
+		  height: 100px;
+		}
+	</style>
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div id="drop_zone" ondrop="dropHandler(event);">
+  <p>Drag one or more files to this Drop Zone ...</p>
+</div>
+
+<div id="drop_zone" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
+  <p>Drag one or more files to this Drop Zone ...</p>
+</div>
+<script>
+    var zone=document.getElementById('drop_zone')
+    var style = getComputedStyle(zone);
+    console.log(style);
+</script>
+
+</body>
+
+</html>
