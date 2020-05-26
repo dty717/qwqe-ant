@@ -13,7 +13,7 @@ class MealTableViewController: UITableViewController {
     var meals=[Meal]();
     private func loadSampleMeal(){
         let img1=UIImage(named: "Image_test")
-        guard let meal1=Meal(name: "bird", rating: 3, photo: img1) else {
+        guard let meal1=Meal(name: "bird", rating: 1, photo: img1) else {
             fatalError("unable to init")
         }
         meals+=[meal1]
